@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="874.0" prefWidth="1242.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NotepadController">
+   <children>
+      <MenuBar layoutX="-1.0" layoutY="53.0" prefHeight="35.0" prefWidth="1242.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#open" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveAs" text="Save as" />
+                  <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#delete" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Format">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Style" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="ta" layoutX="-1.0" layoutY="88.0" prefHeight="786.0" prefWidth="1242.0" />
+      <Label alignment="CENTER" layoutX="2.0" layoutY="4.0" prefHeight="47.0" prefWidth="1242.0" text="Notepad" textFill="#243966">
+         <font>
+            <Font name="Comic Sans MS Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="1011.0" layoutY="28.0" prefHeight="21.0" prefWidth="227.0" />
+   </children>
+</AnchorPane>
